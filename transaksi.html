@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PusPus Library - Transaksi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="images/logo1.png" alt="Logo" class="logo" />
+        <h1>PusPus Library</h1>
+      </div>
+    </header>
+
+    <nav>
+      <section class="banner">
+        <div class="banner-slide">
+          <img src="images/banner.png" alt="Banner 1" />
+        </div>
+        <div class="banner-slide">
+          <img src="images/banner2.png" alt="Banner 2" />
+        </div>
+        <div class="banner-slide">
+          <img src="images/banner3.png" alt="Banner 3" />
+        </div>
+      </section>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="transaksi.html">Transaksi</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Halaman Transaksi</h2>
+
+      <form id="transaksiForm">
+        <label for="nama-transaksi">Nama Transaksi:</label>
+        <input type="text" id="nama-transaksi" name="nama-transaksi" required />
+
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah" required min="1" />
+
+        <label for="kategori">Kategori:</label>
+        <select id="kategori" name="kategori" required>
+          <option value="Buku">Buku</option>
+          <option value="Majalah">Majalah</option>
+          <option value="CD">CD</option>
+        </select>
+
+        <button type="submit">Simpan</button>
+      </form>
+
+      <h3>Daftar Transaksi</h3>
+      <table id="transaksi-table">
+        <thead>
+          <tr>
+            <th>Nama Transaksi</th>
+            <th>Jumlah</th>
+            <th>Kategori</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data transaksi akan dimasukkan di sini -->
+        </tbody>
+      </table>
+
+      <button class="btn-hijau" id="clearData">Hapus Semua Data</button>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 PusPus Library Shafqi Darmawan</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
