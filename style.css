@@ -34,6 +34,7 @@ header .logo {
 nav {
   background-color: #4caf50;
   padding: 10px 0;
+  margin-bottom: 0; /* Menghapus margin-bottom pada navbar */
 }
 
 nav ul {
@@ -63,6 +64,7 @@ nav ul li a:hover {
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-top: 0; /* Menghilangkan margin-top pada banner */
 }
 
 .banner-slide img {
@@ -272,12 +274,23 @@ form#loginForm button:hover {
 
 /* Responsivitas */
 @media (max-width: 768px) {
+  .banner {
+    min-height: 250px; /* Menyesuaikan tinggi banner untuk layar tablet dan ponsel */
+    margin-top: 0; /* Menghilangkan margin-top agar navbar dan banner menempel */
+  }
+
   .steps-container {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 480px) {
+  /* Menyesuaikan untuk layar ponsel */
+  .banner {
+    min-height: 200px;
+    margin-top: 0; /* Menghilangkan margin top pada ponsel */
+  }
+
   .steps-container {
     grid-template-columns: 1fr;
   }
